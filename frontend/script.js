@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Backend API URL
-    const API_URL = 'http://localhost:5000/api';
+    const API_URL = 'https://new-portfolio-2026.onrender.com/api';
 
     // Typewriter effect for hero heading
     const changingRoleEl = document.getElementById('changing-role');
