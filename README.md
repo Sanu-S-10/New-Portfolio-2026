@@ -2,6 +2,9 @@
 
 A simple, beginner-friendly full-stack portfolio website built for a Computer Science student.
 
+## Live Demo
+🌐 **[View the Live Portfolio](https://new-portfolio-2026-blue.vercel.app/)**
+
 ## Technologies Used
 *   **Frontend**: HTML, CSS, JavaScript
 *   **Backend**: Node.js, Express.js
