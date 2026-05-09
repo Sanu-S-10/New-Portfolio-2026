@@ -1,53 +1,43 @@
-# Full-Stack Portfolio Website
+# My Full-Stack Portfolio Website 🚀
 
-A simple, beginner-friendly full-stack portfolio website built for a Computer Science student.
+Hey! This is my personal portfolio website that I built. It's a full-stack project where I connected a frontend built with HTML, CSS, and JavaScript with a Node.js backend and MongoDB database.
 
 ## Live Demo
-🌐 **[View the Live Portfolio](https://new-portfolio-2026-blue.vercel.app/)**
+🌐 **[Check out my live portfolio here!](https://new-portfolio-2026-blue.vercel.app/)**
 
-## Technologies Used
-*   **Frontend**: HTML, CSS, JavaScript
-*   **Backend**: Node.js, Express.js
-*   **Database**: MongoDB
+## What I Used to Build This
+- **Frontend**: HTML, CSS, and vanilla JavaScript (no frameworks, just pure code)
+- **Backend**: Node.js with Express.js for the API
+- **Database**: MongoDB to store my projects and contact messages
+- **Deployment**: Vercel for the frontend, Render for the backend
 
-## Folder Structure
-*   `frontend/`: Contains all HTML, CSS, and JS files for the UI.
-*   `backend/`: Contains the Node.js server, API routes, and Mongoose models.
+## Project Structure
+- `frontend/`: All my HTML, CSS, and JavaScript files for the website UI
+- `backend/`: The Node.js server with API routes and MongoDB models
 
-## Setup Instructions
+## How to Run This Locally
 
-### 1. Backend Setup
-1. Open a terminal and navigate to the `backend` folder:
+### Setting Up the Backend
+1. Navigate to the `backend` folder:
    ```bash
    cd backend
    ```
-2. Install the necessary dependencies:
+2. Install all the packages:
    ```bash
    npm install
    ```
-3. Create a `.env` file in the `backend` folder based on `.env.example`:
+3. Create a `.env` file in the `backend` folder with your MongoDB connection:
    ```bash
-   cp .env.example .env
+   PORT=5000
+   MONGO_URI=your_mongodb_uri_here
    ```
-   *Note: Update the `MONGO_URI` if you are using MongoDB Atlas, otherwise the default local URI will be used.*
-4. Start the backend server:
+4. Start the server:
    ```bash
    node server.js
    ```
-   *The server will run on port 5000 and automatically seed sample projects to your database on the first run.*
+   It'll run on port 5000 and automatically load sample projects.
 
-### 2. Frontend Setup
-1. The frontend consists of static files. You can open `frontend/index.html` directly in your browser.
-2. For the best experience and to avoid CORS issues if testing APIs, serve it using a local server (like the "Live Server" extension in VS Code).
+### Setting Up the Frontend
+1. Open `frontend/index.html` in your browser, or
+2. Use VS Code's "Live Server" extension for a better experience
 
-## Deployment
-
-### Frontend Deployment (Netlify/Vercel)
-1. Drag and drop the `frontend` folder into Netlify.
-2. Update the `backendUrl` variable in `frontend/script.js` to point to your live backend API URL.
-
-### Backend Deployment (Render/Railway)
-1. Push the repository to GitHub.
-2. Create a new Web Service on Render or Railway, pointing to the `backend` folder as the root directory.
-3. Set the Build Command to `npm install` and Start Command to `node server.js`.
-4. Add the `MONGO_URI` and `PORT` environment variables in the deployment dashboard.
